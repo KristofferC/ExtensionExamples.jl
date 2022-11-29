@@ -1,6 +1,6 @@
 module GlueOffsetArrays
 
-using HasGluePkgs, OffsetArrays
+using HasGluePkgs, Example, OffsetArrays
 
 function foo(x::OffsetArray) # Type piracy?? It's ait, I'm just glue.. sniff sniff
     @info "HasGluePkgs.jl: A custom logging method for OffsetArray" x
