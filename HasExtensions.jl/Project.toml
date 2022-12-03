@@ -1,27 +1,24 @@
-name = "HasGluePkgs"
+name = "HasExtensions"
 uuid = "4d3288b3-3afc-4bb6-85f3-489fffe514c8"
 version = "0.2.0"
 
 [deps]
 Example = "7876af07-990d-54b4-ab0e-23690620f79a"
+OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
 
 [weakdeps]
 OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
-CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 
-[gluepkgs]
-GlueOffsetArrays = "OffsetArrays"
-GlueCSV = "CSV"
+[extensions]
+OffsetArraysExt = "OffsetArrays"
 
 [compat]
 Example = "0.5"
 OffsetArrays = "1.12"
-CSV = "0.10"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
-CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 
 [targets]
-test = ["OffsetArrays", "Test"]
+test = ["Test", "OffsetArrays"]
